@@ -1,6 +1,8 @@
 # <center> Coleta de Preço de Ações na Bolsa de Valores via Yahoo Finance </center>
 
-![](https://lh3.googleusercontent.com/pw/AP1GczMxJVr2aLXf4duL70EG377ygdTF9JRJUVSBGaiOZW6nmLqCXIE-_NgRTORgmrLRIYvsZeM89poqgiJt9dh9OljgaTGh2LCMJRLQRE0nsGW6LXwAsu70IdxQiE2J4L_vZ_8yMUFdZLXyxqU4CMyp76zJ=w748-h601-s-no-gm?authuser=0)
+<div style="text-align: center;">
+    <img src = "https://lh3.googleusercontent.com/pw/AP1GczMxJVr2aLXf4duL70EG377ygdTF9JRJUVSBGaiOZW6nmLqCXIE-_NgRTORgmrLRIYvsZeM89poqgiJt9dh9OljgaTGh2LCMJRLQRE0nsGW6LXwAsu70IdxQiE2J4L_vZ_8yMUFdZLXyxqU4CMyp76zJ=w748-h601-s-no-gm?authuser=0" alt = "Exemplo da página da aplicação" />
+</div>
 
 Este projeto tem por finalidade disponibilizar uma aplicação na web via [`streamlit`](https://streamlit.io/) e [`yfinance`](https://finance.yahoo.com/) que informa o valor da ação desejada e os dividendos pagos.
 Atualmente a imagem do docker está hospedada em um servidor do [Render](render.com) com a conta github conectada - isso facilita pois quaisquer alterações que sejam feitas no repositório, o Render irá atualizar no arquivo da aplicação.
