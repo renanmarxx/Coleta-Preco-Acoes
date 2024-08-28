@@ -7,6 +7,15 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+streamlit = "^1.38.0"
+pandas = "^2.2.2"
+numpy = "^2.1.0"
+seaborn = "^0.13.2"
+plotly = "^5.23.0"
+matplotlib = "^3.9.2"
+scikit-learn = "^1.5.1"
+datetime = "^5.5"
+python-dateutil = "^2.9.0.post0"
 
 
 [build-system]
