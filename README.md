@@ -7,6 +7,8 @@
 Este projeto tem por finalidade disponibilizar uma aplicação *`python`* na web via [`streamlit`](https://streamlit.io/) e [`yfinance`](https://finance.yahoo.com/) que informa o valor da ação desejada e os dividendos pagos.
 Atualmente a imagem do docker está hospedada em um servidor do [Render](render.com) com a conta github conectada - isso facilita pois quaisquer alterações que sejam feitas no repositório, o Render irá atualizar no arquivo da aplicação.
 
+A aplicação está hospedada neste link: [https://coleta-preco-acoes.onrender.com/](https://coleta-preco-acoes.onrender.com/)
+
 Para replicar este projeto será necessário: 
 
 1. Clonar o repositório na máquina de destino pelo comando: 
