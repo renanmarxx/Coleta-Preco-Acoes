@@ -16,7 +16,11 @@ matplotlib = "^3.9.2"
 scikit-learn = "^1.5.1"
 datetime = "^5.5"
 python-dateutil = "^2.9.0.post0"
+pandas-datareader = "^0.10.0"
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core"]
