@@ -11,7 +11,7 @@ A aplicação está hospedada neste link: [https://coleta-preco-acoes.onrender.c
 
 Para replicar este projeto será necessário: 
 
-1. Clonar o repositório na máquina de destino pelo comando: 
+1. Clonar o repositório no diretório de destino da máquina pelo comando: 
 ```
 # Clonando via SSH
 git clone git@github.com:renanmarxx/Coleta-Preco-Acoes.git
