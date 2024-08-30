@@ -11,7 +11,6 @@ A aplicação está hospedada neste link: [https://coleta-preco-acoes.onrender.c
 
 O projeto foi desenvolvido na versão do `python 3.12.5` - vide arquivo `.python-version`. Para replicar este projeto será necessário: 
 
-<<<<<<< HEAD
 1. Instalar algumas bibliotecas e configurar o ambiente virtual para execução e desenvolvimentos - utilizando algum terminal, como o CMD ou Git Bash: 
 
 ```
@@ -42,22 +41,22 @@ poetry env use 3.12.5
 ```
 
 2. Clonar o repositório na máquina de destino pelo comando: 
-=======
-1. Clonar o repositório no diretório de destino da máquina pelo comando: 
->>>>>>> 7d1aeb0dac1c7734b151d478c35aadd4b88dd775
 ```
 # Clonando via SSH
+
 git clone git@github.com:renanmarxx/Coleta-Preco-Acoes.git
 ```
 
 3. Construir a imagem docker do projeto e instalando suas dependências:
 ```
 # Construindo imagem docker do projeto
+
 docker build -t nome-da-imagem-desejado
 ```
 
 4. Executar a imagem criada no passo anterior em um container local ou hospedar em algum servidor/máquina como EC2 da AWS:
 ```
 # Executar a imagem em um container local
+
 docker run -d -p 8501:8501 --name nome-do-container-desejado nome-da-imagem-criada
 ```
