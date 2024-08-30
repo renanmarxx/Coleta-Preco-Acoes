@@ -7,21 +7,50 @@
 Este projeto tem por finalidade disponibilizar uma aplicação na web via [`streamlit`](https://streamlit.io/) e [`yfinance`](https://finance.yahoo.com/) que informa o valor da ação desejada e os dividendos pagos.
 Atualmente a imagem do docker está hospedada em um servidor do [Render](render.com) com a conta github conectada - isso facilita pois quaisquer alterações que sejam feitas no repositório, o Render irá atualizar no arquivo da aplicação.
 
-Para replicar este projeto será necessário: 
+O projeto foi desenvolvido na versão do `python 3.12.5` - vide arquivo `.python-version`. Para replicar este projeto será necessário: 
 
-1. Clonar o repositório na máquina de destino pelo comando: 
+1. Instalar algumas bibliotecas e configurar o ambiente virtual para execução e desenvolvimentos - utilizando algum terminal, como o CMD ou Git Bash: 
+
+```
+Instalando Bibliotecas
+
+
+# pyenv - dependendo do sistema operacional (Mac/Linux/Windows) o processo será diferente. O modo a seguir serve para instalação no Windows via PowerShell:
+
+Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
+
+
+# pipx
+pip install pipx
+
+
+# poetry
+pipx install poetry
+```
+
+```
+Configurando ambiente virtual
+
+pipx ensure path
+poetry config virtualenvs.in-project true
+poetry new coleta-preco-acoes
+pyenv local 3.12.5
+poetry env use 3.12.5
+```
+
+2. Clonar o repositório na máquina de destino pelo comando: 
 ```
 # Clonando via SSH
 git clone git@github.com:renanmarxx/Coleta-Preco-Acoes.git
 ```
 
-2. Construir a imagem docker do projeto e instalando suas dependências:
+3. Construir a imagem docker do projeto e instalando suas dependências:
 ```
 # Construindo imagem docker do projeto
 docker build -t nome-da-imagem-desejado
 ```
 
-3. Executar a imagem criada no passo anterior em um container local ou hospedar em algum servidor/máquina como EC2 da AWS:
+4. Executar a imagem criada no passo anterior em um container local ou hospedar em algum servidor/máquina como EC2 da AWS:
 ```
 # Executar a imagem em um container local
 docker run -d -p 8501:8501 --name nome-do-container-desejado nome-da-imagem-criada
