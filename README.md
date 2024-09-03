@@ -36,8 +36,10 @@ Configurando ambiente virtual
 pipx ensure path
 poetry config virtualenvs.in-project true
 poetry new coleta-preco-acoes
+cd coleta-preco-acoes
 pyenv local 3.12.5
 poetry env use 3.12.5
+poetry shell
 ```
 
 2. Clonar o repositório na máquina de destino pelo comando: 
